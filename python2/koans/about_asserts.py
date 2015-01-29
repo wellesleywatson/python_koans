@@ -53,7 +53,7 @@ class AboutAsserts(Koan):
         """
 
         # This throws an AssertionError exception
-        assert False
+        assert True
 
     def test_that_sometimes_we_need_to_know_the_class_type(self):
         """
@@ -72,7 +72,7 @@ class AboutAsserts(Koan):
         #
         # See for yourself:
 
-        self.assertEqual(__, "naval".__class__) # It's str, not <type 'str'>
+        self.assertEqual(str, "naval".__class__) # It's str, not <type 'str'>
 
         # Need an illustration? More reading can be found here:
         #
